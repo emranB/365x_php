@@ -1,0 +1,52 @@
+[
+	{
+		"id": 10001,
+		"name": "Russell St Hideaway",
+		"neighbourhood": "North End Halifax",
+    "numberofbedrooms": "3",
+    "amenities": "Laundry, Parking, Wifi, Backyard",
+    "nearby":"Steps from the Hydrostone Market",
+		"img_directory": "RussellStreet",
+		"link":"https://www.airbnb.ca/rooms/21763726?s=51"
+	},
+	{
+		"id": 10002,
+    "name": "Centrally Located Hunter St with Office",
+    "neighbourhood": "North End Halifax",
+    "numberofbedrooms": "2",
+    "amenities": "Laundry, Parking, Wifi, Dedicated Office Space",
+    "nearby":"The Halifax Commons and Quinpool Road",
+		"img_directory": "HunterStreet",
+		"link":"https://www.airbnb.ca/rooms/21405283?s=51"
+	},
+	{
+		"id": 10003,
+    "name": "Luxurious Centrally Located Belle Aire Terrace",
+    "neighbourhood": "North End Halifax",
+    "numberofbedrooms": "3",
+    "amenities": "Laundry, Wifi",
+    "nearby":"Close to the Grocery Store and Foodie-Heaven, Agricola St",
+		"img_directory": "BelleAire",
+		"link":"https://www.airbnb.ca/rooms/22242075?s=51"
+	},
+	{
+		"id": 10004,
+    "name": "Bright and Spacious High End 2 Bedroom",
+    "neighbourhood": "St Margaret's Bay",
+    "numberofbedrooms": "2",
+    "amenities": "Laundry, Parking, Wifi, Deck",
+    "nearby":"Close to Penninsular Halifax, but with Added Privacy and Access to Green Spaces",
+		"img_directory": "SaintMargarets",
+		"link":"https://www.airbnb.ca/rooms/20697506?s=51"
+	},
+	{
+		"id": 10005,
+    "name": "2 Bedroom in Heart of Downtown",
+    "neighbourhood": "North End",
+    "numberofbedrooms": "2",
+    "amenities": "Laundry, Wifi",
+    "nearby":"Walking Distance to Downtown Halifax and Popular Gottingen St",
+		"img_directory": "Brunswick",
+		"link":"https://www.airbnb.ca/rooms/21068556?s=51"
+	}
+]

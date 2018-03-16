@@ -1,0 +1,100 @@
+<div class="container-fluid">
+  <div class="row" style="padding: 0;">
+    <div class="home-bottom col-12">
+      <div class="row carousel-container">
+
+
+        <div class="row property-inner upper">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 property image">
+            <img src="{{currentProperty.showingPic.path}}" alt="{{currentProperty.showingPic}}">
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 property description">
+            <h1 class="raleway">{{currentProperty.title}}</h1>
+            <hr>
+            <p class="raleway">
+              <span class="map-icon map-icon-map-pin green"></span>
+              {{currentProperty.neighbourhood}}
+            </p>
+            <p class="raleway">
+              <span class="map-icon map-icon-lodging green"></span>
+              {{currentProperty.numberofbedrooms}} bedrooms
+            </p>
+            <p class="raleway">
+              <span class="map-icon map-icon-grocery-or-supermarket green"></span>
+              {{currentProperty.amenities}}
+            </p>
+            <p class="raleway">
+              <span class="map-icon map-icon-night-club green"></span>
+              Close to {{currentProperty.nearby}}
+            </p>
+            <p class="raleway" style="margin-top: 50px;">
+              <a class="ghost-btn-1 book-now" target="_blank" href="{{currentProperty.link}}"> Book Now! </a>
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="row properties-container lower">
+          <div class="col-12">
+
+            <!-- Left Scroll Button -->
+            <div class="carousel-content carousel-button">
+              <button class="scrollBtn left pull-right" ng-click="scrollLeft()">
+                <i class="fa fa-caret-left"></i>
+              </button>
+            </div>
+
+            <!-- Middle Containter -->
+            <div class="carousel-content tile-container">
+              <div class="carousel">
+                <div class="item" ng-repeat="property in properties">
+                  <!-- .................. Tile HTML Template .................. -->
+                  <div class="tile">
+                    <!-- <a ui-sref="property({id: {{property.id}} })" class="on-hover raleway"> -->
+                    <a ng-click="viewPropertyDetails(property)" class="on-hover raleway">
+                      <h2 class="title raleway">
+                        {{property.name}}
+                      </h2>
+                      <hr>
+                      <ul style="padding: 5%; color: white;">
+                        <li> {{property.numberofbedrooms}} bedrooms </li>
+                        <li> {{property.neighbourhood}} </li>
+                        <li> {{property.nearby}} </li>
+                        <li> {{property.amenities}} </li>
+                      </ul>
+                      <p class="follow-link raleway">
+                        <i class="fa fa-chevron-circle-right icon"></i>
+                        &nbsp
+                        Find out more . . .
+                      </p>
+                    </a>
+                    <div class="photo">
+                      <img src="data/pics/{{property.img_directory}}/{{property.img_directory}}1.jpg" alt="Some alt">
+                    </div>
+                    <div class="title raleway">
+                      {{property.name}}
+                    </div>
+                  </div>
+                  <!-- .......................................................... -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Scroll Button -->
+            <div class="carousel-content carousel-button">
+              <button class="scrollBtn right pull-left" ng-click="scrollRight()">
+                <i class="fa fa-caret-right"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
